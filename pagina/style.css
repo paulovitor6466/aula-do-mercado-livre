@@ -1,0 +1,468 @@
+/* CONFIGURAÇÕES GERAIS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+/* CABEÇALHO */
+
+.navbar {
+    background-color: #FFE600;
+    padding: 15px 0;
+    color: #2D3277;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    white-space: nowrap;
+}
+
+
+/* BARRA DE PESQUISA */
+
+.barra {
+    flex: 1;
+    max-width: 550px;
+    display: flex;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.barra input {
+    flex: 1;
+    border: none;
+    padding: 13px;
+    outline: none;
+    font-size: 14px;
+}
+
+.barra button {
+    background-color: white;
+    color: #555;
+    border-left: 1px solid #eee;
+    border-radius: 0;
+    width: 45px;
+    font-size: 23px;
+    padding: 5px;
+}
+
+
+/* MENU DE NAVEGAÇÃO */
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+.menu a {
+    color: #2D3277;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.menu a:hover {
+    color: #3483fa;
+}
+
+.cep-box {
+    display: flex;
+    flex-direction: column;
+    font-size: 11px;
+    color: #333;
+    margin-right: 10px;
+}
+
+.submenu {
+    display: flex;
+    gap: 15px;
+    margin-left: auto;
+}
+
+
+/* ÁREA PRINCIPAL */
+
+.meli-section {
+    background-image:
+        linear-gradient(
+            to right,
+            #FFE600 45%,
+            rgba(255, 230, 0, 0) 85%
+        ),
+        url('banner.jpg');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    background-color: #ededed;
+    min-height: 100vh;
+    padding: 50px 0 60px;
+}
+
+
+/* IDENTIFICAÇÃO MELI+ */
+
+.header {
+    margin-bottom: 25px;
+    padding-top: 20px;
+}
+
+.texto-meli {
+    display: inline-block;
+    background-color: #ff007f;
+    color: white;
+    padding: 9px 25px;
+    border-radius: 25px;
+    font-weight: 800;
+    font-size: 20px;
+    letter-spacing: -0.5px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+
+/* TÍTULO */
+
+.section-title {
+    color: #1a1a1a;
+    font-size: 23px;
+    margin-bottom: 22px;
+}
+
+
+/* CARDS */
+
+.cards-container {
+    display: flex;
+    gap: 24px;
+    align-items: stretch;
+}
+
+.card {
+    background-color: white;
+    border-radius: 17px;
+    padding: 28px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    flex: 1;
+    min-width: 0;
+
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.13);
+}
+
+.card h2 {
+    font-size: 22px;
+    color: #1a1a1a;
+    margin-bottom: 12px;
+}
+
+
+/* DESTAQUE DE PREÇO */
+
+.preco {
+    display: block;
+    font-weight: 800;
+    font-size: 17px;
+    color: #555;
+    padding-bottom: 18px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.preco small {
+    font-size: 13px;
+    font-weight: normal;
+}
+
+
+/* CONTEÚDO DOS PLANOS */
+
+.card-conteudo h3 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 18px;
+    line-height: 1.5;
+}
+
+.card-conteudo ul {
+    list-style: none;
+    margin-top: 15px;
+}
+
+.card-conteudo ul li {
+    position: relative;
+    padding-left: 22px;
+    margin-bottom: 14px;
+    font-size: 13px;
+    color: #444;
+    line-height: 1.5;
+}
+
+.card-conteudo ul li::before {
+    content: "•";
+    position: absolute;
+    left: 4px;
+    font-size: 18px;
+    color: #555;
+}
+
+
+/* STREAMING DO PLANO TOTAL */
+
+.streaming {
+    background-color: #f3e8fa;
+    border-radius: 10px;
+    padding: 12px;
+    margin-bottom: 18px;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-disney {
+    background-color: #101b45;
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+    border-radius: 7px;
+    width: 58px;
+    height: 55px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.streaming-info strong {
+    font-size: 13px;
+}
+
+.streaming-info p {
+    font-size: 12px;
+    color: #555;
+    margin-top: 5px;
+}
+
+
+/* STREAMING DO PLANO MEGA */
+
+.streaming-mega {
+    background-color: #f3e8fa;
+    border-radius: 10px;
+    padding: 15px 10px;
+    margin-bottom: 18px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.streaming-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.streaming-logos div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 42px;
+    min-width: 48px;
+    padding: 6px;
+
+    border-radius: 7px;
+    color: white;
+    font-weight: 800;
+}
+
+
+/* NETFLIX */
+
+.logo-netflix {
+    background-color: #E50914;
+    font-size: 27px;
+    font-family: Arial, sans-serif;
+}
+
+
+/* DISNEY+ */
+
+.logo-disney-mega {
+    background-color: #101b45;
+    font-size: 11px;
+}
+
+
+/* MAX */
+
+.logo-max {
+    background-color: #111;
+    font-size: 21px;
+}
+
+
+/* PARAMOUNT */
+
+.logo-paramount {
+    background-color: #0064a8;
+    font-size: 19px;
+}
+
+.streaming-mega p {
+    color: #555;
+    font-size: 12px;
+}
+
+
+/* BOTÕES */
+
+button {
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.btn-primary,
+.btn-outline {
+    width: 100%;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    transition: 0.2s;
+}
+
+.btn-primary {
+    background-color: #3483f4;
+    color: white;
+    border: 1px solid #3483f4;
+}
+
+.btn-primary:hover {
+    background-color: #2968c8;
+}
+
+.btn-outline {
+    background-color: white;
+    color: #3483f4;
+    border: 1px solid #3483f4;
+}
+
+.btn-outline:hover {
+    background-color: #eef5ff;
+}
+
+
+/* PLANO EM DESTAQUE */
+
+.featured {
+    border: 2px solid #3483f4;
+    position: relative;
+}
+
+
+/* RESPONSIVIDADE PARA TABLETS */
+
+@media (max-width: 900px) {
+
+    .cards-container {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        flex: 1 1 45%;
+    }
+
+    .menu {
+        gap: 13px;
+    }
+
+}
+
+
+/* RESPONSIVIDADE PARA CELULARES */
+
+@media (max-width: 600px) {
+
+    .nav {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .barra {
+        max-width: 100%;
+    }
+
+    .menu {
+        justify-content: flex-start;
+        gap: 15px;
+    }
+
+    .submenu {
+        margin-left: 0;
+        flex-wrap: wrap;
+    }
+
+    .meli-section {
+        padding: 30px 0;
+        background-image: none;
+        background-color: #FFE600;
+    }
+
+    .cards-container {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .section-title {
+        font-size: 21px;
+    }
+
+}
